@@ -43,7 +43,7 @@ Deploy the **backend** as a Web Service and the **frontend** as a Static Site on
 4. Under **Security → Network Access** → **Add IP Address** → click **Allow Access from Anywhere** → **Confirm**.
 5. On your cluster, click **Connect** → **Drivers** → copy the connection string:
    ```
-   mongodb+srv://connectcalluser:<password>@cluster0.xxxxx.mongodb.net/connectcall?retryWrites=true&w=majority
+   mongodburl
    ```
    Replace `<password>` with your actual password. **Save this string.**
 
@@ -97,7 +97,7 @@ Deploy the **backend** as a Web Service and the **frontend** as a Static Site on
 
    | Key | Value |
    |---|---|
-   | `VITE_API_URL` | `https://connectcall-backend.onrender.com` *(from Step 3 — no trailing slash)* |
+   | `VITE_API_URL` | `https://backend.onrender.com` *(from Step 3 — no trailing slash)* |
 
 5. Click **Create Static Site**.
 6. Wait 2–4 minutes. You'll get a URL like:
@@ -116,7 +116,7 @@ Deploy the **backend** as a Web Service and the **frontend** as a Static Site on
 2. Click **Environment** in the left sidebar.
 3. Set `FRONTEND_URL` to your frontend URL:
    ```
-   https://connectcall-frontend.onrender.com
+   https://frontend.onrender.com
    ```
 4. Click **Save Changes**. Render redeploys the backend automatically (~1 min).
 
